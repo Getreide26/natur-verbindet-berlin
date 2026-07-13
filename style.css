@@ -870,19 +870,21 @@ box-shadow:0 0 30px rgba(255,255,255,0.3);
 
 .logo strong{
 
-    font-size:16px;
+    font-size:15px;
+    line-height:1.2;
 
 }
 
 .logo p{
 
-    font-size:12px;
+    font-size:11px;
 
 }
 
 .logo-linie{
 
     width:140px;
+    margin:6px 0;
 
 }
 
@@ -898,15 +900,15 @@ box-shadow:0 0 30px rgba(255,255,255,0.3);
 
     .menu-toggle{
 
-        display:block;
+    display:block;
+    font-size:32px;
+    color:white;
+    cursor:pointer;
 
-        font-size:32px;
+    position:relative;
+    right:30px;
 
-        color:white;
-
-        cursor:pointer;
-
-    }
+}
 
     .menu.aktiv{
 
