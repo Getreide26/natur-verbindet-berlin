@@ -58,7 +58,7 @@ ul {
     height: 100vh;
     background: linear-gradient(rgba(30,60,30,0.45),
                                 rgba(30,60,30,0.45)),
-        url("bilder/hero.JPG");       
+        url("bilder/hero.jpg");       
     background-size: cover;
     background-position: center;
 
@@ -111,7 +111,7 @@ ul {
 
 }
 
-    nav{
+   nav{
 
     position:fixed;
 
@@ -127,13 +127,19 @@ ul {
 
     align-items:center;
 
-    padding:25px 60px;
+    padding:18px 60px;
 
     box-sizing:border-box;
 
-    background:rgba(34, 52, 34, 0.5);
+    background:rgba(22,45,25,0.42);
+
+    backdrop-filter:blur(8px);
+
+    -webkit-backdrop-filter:blur(8px);
 
     z-index:1000;
+
+    transition:all .3s ease;
 
 }
 
@@ -143,15 +149,76 @@ ul {
 
     align-items:center;
 
-    gap:15px;
+    gap:20px;
 
     color:white;
+
+
+}
+
+.logo-icon{
+
+    width:88px;
+
+    height:88px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,.45))
+
+}
+
+.logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
 
 }
 
 .logo strong{
 
-    font-size:28px;
+    font-size:20px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    letter-spacing:.3px;
+
+    text-shadow:2px 2px 6px rgba(0,0,0,.45);
+
+}
+
+.logo-linie{
+
+    width:220px;
+
+    height:2px;
+
+    margin:10px 0;
+
+    background:linear-gradient(
+        to right,
+        rgba(255,255,255,.95),
+        rgba(255,255,255,.35)
+    );
+
+}
+
+.logo p{
+
+    margin:0;
+
+    font-size:15px;
+
+    color:rgba(255,255,255,.92);
+
+    text-shadow:1px 1px 5px rgba(0,0,0,.45);
 
 }
 
@@ -175,9 +242,10 @@ ul {
 
     display:flex;
 
-    gap:30px;
+    gap:35px;
 
     list-style:none;
+
 
 }
 
@@ -190,6 +258,20 @@ ul {
     font-size:20px;
 
     transition:0.3s;
+
+}
+
+/* Hamburger-Menü */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:32px;
+
+    color:white;
+
+    cursor:pointer;
 
 }
 
@@ -450,7 +532,23 @@ footer{
 
     color:#d7e6d7;
 
-}/* ---------- Bildkarten ---------- */
+}
+
+.footer-logo-icon{
+
+    width:54px;
+
+    height:54px;
+
+    object-fit:contain;
+
+    vertical-align:middle;
+
+    margin-right:6px;
+
+}
+
+/* ---------- Bildkarten ---------- */
 
 .bildkarte{
 
@@ -722,75 +820,100 @@ box-shadow:0 0 30px rgba(255,255,255,0.3);
 
 @media (max-width: 768px){
 
-nav{
+    nav{
 
+        padding:12px 15px;
 
-    padding:12px 15px;
+    }
 
-}
+    .menu{
 
-.menu{
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+        font-size:32px;
+
+        color:white;
+
+        cursor:pointer;
+
+    }
+
+    .menu.aktiv{
 
     display:flex;
 
-    flex-wrap:wrap;
+    flex-direction:column;
 
-    justify-content:center;
+    position:absolute;
 
-    gap:12px;
+    top:70px;
 
-    margin-top:10px;
+    right:20px;
 
-}
+    background:rgba(34,52,34,0.95);
 
-.hero h1{
+    padding:20px;
 
-    font-size:42px;
+    border-radius:15px;
 
-}
-
-.hero p{
-
-    font-size:20px;
+    gap:15px;
 
 }
 
-.karten{
+    .hero h1{
 
-    grid-template-columns:1fr;
+        font-size:42px;
 
-}
+    }
 
-.galerie-grid{
+    .hero p{
 
-    grid-template-columns:1fr;
+        font-size:20px;
 
-}
+    }
 
-.termin{
+    .karten{
 
-    padding:25px;
+        grid-template-columns:1fr;
 
-}
+    }
 
-}
+    .galerie-grid{
 
-.logo strong{
+        grid-template-columns:1fr;
 
-    font-size:18px;
+    }
 
-}
+    .termin{
 
-.logo small{
+        padding:25px;
 
-    font-size:11px;
+    }
 
-}
+    .logo strong{
 
-.menu li a{
+        font-size:18px;
 
-    font-size:15px;
+    }
 
-    padding:6px 8px;
+    .logo small{
+
+        font-size:11px;
+
+    }
+
+    .menu li a{
+
+        font-size:15px;
+
+        padding:6px 8px;
+
+    }
 
 }
