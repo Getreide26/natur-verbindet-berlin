@@ -6,6 +6,16 @@ html{
 
 }
 
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
 body {
 
     margin:0;
@@ -816,13 +826,67 @@ box-shadow:0 0 30px rgba(255,255,255,0.3);
 
 }
 
+@media (max-width:1100px){
+
+    .menu{
+
+        gap:20px;
+
+    }
+
+    .menu a{
+
+        font-size:18px;
+
+    }
+
+}
+
 /* ---------- Smartphone ---------- */
 
 @media (max-width: 768px){
 
     nav{
 
-        padding:12px 15px;
+        .logo{
+
+    gap:10px;
+
+}
+
+.logo-icon{
+
+    width:54px;
+
+    height:54px;
+
+}
+
+.logo-text{
+
+    flex:1;
+
+}
+
+.logo strong{
+
+    font-size:16px;
+
+}
+
+.logo p{
+
+    font-size:12px;
+
+}
+
+.logo-linie{
+
+    width:140px;
+
+}
+
+        padding:10px 10px;
 
     }
 
@@ -915,5 +979,19 @@ box-shadow:0 0 30px rgba(255,255,255,0.3);
         padding:6px 8px;
 
     }
+
+}
+
+.idee ul{
+
+    padding-left:20px;
+
+}
+
+.idee li{
+
+    font-size:17px;
+
+    word-break:break-word;
 
 }
