@@ -953,6 +953,10 @@ box-shadow:0 0 30px rgba(255,255,255,0.3);
 
     gap:15px;
 
+    align-items:center;
+
+    text-align:center;
+
 }
 
     .hero h1{
