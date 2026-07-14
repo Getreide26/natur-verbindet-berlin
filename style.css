@@ -490,6 +490,34 @@ ul {
 
 }
 
+.tourkarte{
+
+    width:100%;
+
+    max-width:650px;
+
+    display:block;
+
+    margin:25px auto;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+}
+
+.infos h4{
+
+    margin-top:35px;
+
+    margin-bottom:15px;
+
+    color:#2f6f3e;
+
+    font-size:24px;
+
+}
+
 .button-klein{
 
     display:inline-block;
