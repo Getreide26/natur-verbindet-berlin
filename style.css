@@ -506,6 +506,14 @@ ul {
 
 }
 
+.tourkarte-link{
+
+    display:block;
+
+    cursor:pointer;
+
+}
+
 .infos h4{
 
     margin-top:35px;
