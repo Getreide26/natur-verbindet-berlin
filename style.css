@@ -490,6 +490,11 @@ ul {
 
 }
 
+.termin-beschreibung{
+    margin-top:25px;
+    line-height:1.7;
+}
+
 .tourkarte{
 
     width:100%;
@@ -503,6 +508,8 @@ ul {
     border-radius:18px;
 
     box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    cursor:pointer;
 
 }
 
